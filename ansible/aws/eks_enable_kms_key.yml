@@ -1,0 +1,17 @@
+- hosts: localhost
+  connection: local
+  vars:
+    access_key: "{{ aws_access_key }}"
+    secret_key: "{{ aws_secret_key }}"
+    region: "{{ aws_region }}"
+    alias: "{{ aws_alias }}"
+    key_id: "{{ aws_key_id }}"
+  tasks:
+    - name: test kms
+      aws_kms:
+        alias: '{{ alias }}'
+        key_id: '{{ key_id }}'
+        aws_access_key: '{{ access_key }}'
+        aws_secret_key: '{{ secret_key }}'
+        region: '{{ region }}'
+        enabled: yes

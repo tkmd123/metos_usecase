@@ -1,0 +1,21 @@
+- hosts: localhost
+  connection: local
+  vars:
+    rule_list:
+      - { proto: tcp, from_port: 443, to_port: 443, cidr_ip: 0.0.0.0/0 }
+    access_key: "{{ aws_access_key }}"
+    secret_key: "{{ aws_secret_key }}"
+    ec2_group_region: "{{ aws_region }}"
+    ec2_group_vpc: "{{ vpc_id }}"
+    ec2_group_description: security groups allow incoming traffic only on TCP port 443
+    ec2_group_name: "{{ group_name }}"
+  tasks:
+    - name: Add rules to security group
+      ec2_group:
+        name: '{{ ec2_group_name }}'
+        description: '{{ ec2_group_description }}'
+        vpc_id: '{{ ec2_group_vpc }}'
+        aws_access_key: '{{ access_key }}'
+        aws_secret_key: '{{ secret_key }}'
+        region: '{{ ec2_group_region }}'
+        rules: '{{ rule_list }}'

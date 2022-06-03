@@ -1,0 +1,504 @@
+{
+  "cluster": [
+    {
+      "node": [],
+      "pod": [
+        {
+          "self": {
+            "name": "coredns-55b9c7d86b-rrt7j",
+            "namespace": "kube-system",
+            "source_data": {
+              "cluster_name": "homtech",
+              "container": [
+                {
+                  "image_pull_policy": "IfNotPresent",
+                  "name": "coredns"
+                }
+              ],
+              "name": "coredns-55b9c7d86b-rrt7j",
+              "namespace": "kube-system"
+            }
+          }
+        },
+        {
+          "self": {
+            "name": "coredns-55b9c7d86b-tdkvf",
+            "namespace": "kube-system",
+            "source_data": {
+              "cluster_name": "homtech",
+              "container": [
+                {
+                  "image_pull_policy": "IfNotPresent",
+                  "name": "coredns"
+                }
+              ],
+              "name": "coredns-55b9c7d86b-tdkvf",
+              "namespace": "kube-system"
+            }
+          }
+        }
+      ],
+      "self": {
+        "arn": "arn:aws:eks:ap-southeast-1:352209018618:cluster/homtech",
+        "display_name": "homtech",
+        "endpoint": "https://B4FF639177CCAD133100824BCD8950F8.gr7.ap-southeast-1.eks.amazonaws.com",
+        "identity": "{'oidc': {'issuer': 'https://oidc.eks.ap-southeast-1.amazonaws.com/id/B4FF639177CCAD133100824BCD8950F8'}}",
+        "kubernetesNetworkConfig": "{'serviceIpv4Cidr': '10.100.0.0/16'}",
+        "logging": {
+          "clusterLogging": [
+            {
+              "enabled": false,
+              "types": [
+                "api",
+                "audit",
+                "authenticator",
+                "controllerManager",
+                "scheduler"
+              ]
+            }
+          ]
+        },
+        "name": "homtech",
+        "namespace": [
+          {
+            "cluster_name": "homtech",
+            "name": "default"
+          },
+          {
+            "cluster_name": "homtech",
+            "name": "kube-node-lease"
+          },
+          {
+            "cluster_name": "homtech",
+            "name": "kube-public"
+          },
+          {
+            "cluster_name": "homtech",
+            "name": "kube-system"
+          }
+        ],
+        "platformVersion": "eks.2",
+        "region": "ap-southeast-1",
+        "roleArn": "arn:aws:iam::352209018618:role/eksClusterRole",
+        "source_data": {
+          "arn": "arn:aws:eks:ap-southeast-1:352209018618:cluster/homtech",
+          "certificateAuthority": {
+            "data": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EVXlOakV4TVRNd04xb1hEVE15TURVeU16RXhNVE13TjFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBS04yCi92UmIvY3ZQOTh4TnBjNS9WNnRGdVlxOHhqdUsxTDZZYnU4S3BmQ3g5bzJHVTU1V3d4WkIrU2JKTkRjc1YxdGQKN0JaRVAwbVlWcmhsTWI5M2R6TitpRnZUcytMKzVWTXpKS2wvSmswY0Z5QjRuR0RGNDgyVVZnRGNQN3VWVGpNYQplaHVBLzFTVG1iME8zVTBPK2pZY2J4Y3pSU2d6ajZudXlubEhhdGhyZk5xbEp1dmtMcHlzN3d5SG9OK08yVExtCkE0TStxNEZ5SjhVam9EZTVrbUthbk5ta29FZ0djU05KRnE3bTJwcnhta2YrWm53REsrRTRkR0krSWdjYUJKWVYKMTlRcWtFS3lYZHhHcG05Nm5xMnRhOHdFbVEyL1dZaVNZL3U1cW9TVHIwWGMzZE1SSXZXd2tuZzRrWGNYeGNnSApqTXZYVmcrUUJOV0NhdzdmQ3VrQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZFMnBSbktmcG1jeVhlZHJBN0U5aEtKR2U5WmVNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFBTXZ5bDEzc0xnKzJnMDNCYXFQM0h1SzhhMm4wbVN5cFN2UThLZTZXKzU1WVFJQVA2WgpmaFpRSTFWblVVbnh0S0VxTC9BdFZ2ZC8yS3NHdGVKelFjdlhYYm51QnFHYmxYRHNMejFWUTZ0ZEIrY2FDUUJqCjJKbVRvVWNsdzF3U3RNZ3pVYk9QQUM4WFQxS3RHU0Z4V2l4ZWs3R0txN1dUQ0lDekhobzVBb045ZlBKNnF3bHIKNGhwd1JrRk45NXlsYmlSY3Y5dmdSRjF0SmcwT0UrTGJxbjk0MUd2eWx6NVpqejM5bTRITHkrV3pXR3hLVXZCYgpYMytBY3RRWmhvNlMyYnNuQ0U2a3lzUmkwM2h1d2ZBTHRic1hvL0kybG55TnQ1TFVEKzJOem8xMmZqQ01rWG5GCnFZVk0vbWJ0cHNIc25Xa1lvaDVONTVtNE5waFFTOURmUHhMbQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
+          },
+          "createdAt": "Thu, 26 May 2022 11:07:13 GMT",
+          "encryptionConfig": [
+            {
+              "provider": {
+                "keyArn": "arn:aws:kms:ap-southeast-1:352209018618:key/72a201a9-32f1-4b06-a02b-0b9f37a69108"
+              },
+              "resources": [
+                "secrets"
+              ]
+            }
+          ],
+          "endpoint": "https://B4FF639177CCAD133100824BCD8950F8.gr7.ap-southeast-1.eks.amazonaws.com",
+          "identity": {
+            "oidc": {
+              "issuer": "https://oidc.eks.ap-southeast-1.amazonaws.com/id/B4FF639177CCAD133100824BCD8950F8"
+            }
+          },
+          "kubernetesNetworkConfig": {
+            "serviceIpv4Cidr": "10.100.0.0/16"
+          },
+          "logging": {
+            "clusterLogging": [
+              {
+                "enabled": false,
+                "types": [
+                  "api",
+                  "audit",
+                  "authenticator",
+                  "controllerManager",
+                  "scheduler"
+                ]
+              }
+            ]
+          },
+          "name": "homtech",
+          "namespace": [
+            {
+              "cluster_name": "homtech",
+              "name": "default"
+            },
+            {
+              "cluster_name": "homtech",
+              "name": "kube-node-lease"
+            },
+            {
+              "cluster_name": "homtech",
+              "name": "kube-public"
+            },
+            {
+              "cluster_name": "homtech",
+              "name": "kube-system"
+            }
+          ],
+          "platformVersion": "eks.2",
+          "pod": [
+            {
+              "cluster_name": "homtech",
+              "container": [
+                {
+                  "image_pull_policy": "IfNotPresent",
+                  "name": "coredns"
+                }
+              ],
+              "name": "coredns-55b9c7d86b-rrt7j",
+              "namespace": "kube-system"
+            },
+            {
+              "cluster_name": "homtech",
+              "container": [
+                {
+                  "image_pull_policy": "IfNotPresent",
+                  "name": "coredns"
+                }
+              ],
+              "name": "coredns-55b9c7d86b-tdkvf",
+              "namespace": "kube-system"
+            }
+          ],
+          "resourcesVpcConfig": {
+            "clusterSecurityGroupId": "sg-02e101c951f087ace",
+            "endpointPrivateAccess": false,
+            "endpointPublicAccess": true,
+            "publicAccessCidrs": [
+              "0.0.0.0/0"
+            ],
+            "securityGroupIds": [],
+            "subnetIds": [
+              "subnet-0ab5b440f03715e75",
+              "subnet-0d1a2e8ab14ae489f",
+              "subnet-08c4e4ca160626aab"
+            ],
+            "vpcId": "vpc-012c931361a99622c"
+          },
+          "roleArn": "arn:aws:iam::352209018618:role/eksClusterRole",
+          "service": [
+            {
+              "cluster_name": "homtech",
+              "name": "kubernetes",
+              "namespace": "default"
+            },
+            {
+              "cluster_name": "homtech",
+              "name": "kube-dns",
+              "namespace": "kube-system"
+            }
+          ],
+          "status": "ACTIVE",
+          "tags": {},
+          "version": "1.22",
+          "zone": "ap-southeast-1"
+        },
+        "status": "ACTIVE",
+        "tags": {},
+        "version": "1.22"
+      },
+      "service": [
+        {
+          "self": {
+            "name": "kubernetes",
+            "namespace": "default",
+            "source_data": {
+              "cluster_name": "homtech",
+              "name": "kubernetes",
+              "namespace": "default"
+            }
+          }
+        },
+        {
+          "self": {
+            "name": "kube-dns",
+            "namespace": "kube-system",
+            "source_data": {
+              "cluster_name": "homtech",
+              "name": "kube-dns",
+              "namespace": "kube-system"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "disk": [],
+  "eip": [],
+  "iam": [],
+  "instance": [],
+  "kms": [
+    {
+      "self": {
+        "source_data": {
+          "AWSAccountId": "352209018618",
+          "Arn": "arn:aws:kms:ap-southeast-1:352209018618:key/72a201a9-32f1-4b06-a02b-0b9f37a69108",
+          "CreationDate": "Mon, 30 May 2022 06:06:38 GMT",
+          "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
+          "Description": "eks_key",
+          "Enabled": true,
+          "EncryptionAlgorithms": [
+            "SYMMETRIC_DEFAULT"
+          ],
+          "KeyId": "72a201a9-32f1-4b06-a02b-0b9f37a69108",
+          "KeyManager": "CUSTOMER",
+          "KeyPolicies": [
+            {
+              "Id": "key-consolepolicy-3",
+              "Statement": [
+                {
+                  "Action": "kms:*",
+                  "Effect": "Allow",
+                  "Principal": {
+                    "AWS": "arn:aws:iam::352209018618:root"
+                  },
+                  "Resource": "*",
+                  "Sid": "Enable IAM User Permissions"
+                }
+              ],
+              "Version": "2012-10-17"
+            }
+          ],
+          "KeyRotationEnabled": false,
+          "KeySpec": "SYMMETRIC_DEFAULT",
+          "KeyState": "Enabled",
+          "KeyUsage": "ENCRYPT_DECRYPT",
+          "MultiRegion": false,
+          "Origin": "AWS_KMS"
+        }
+      }
+    }
+  ],
+  "log_monitor": [],
+  "network": [
+    {
+      "self": {
+        "description": "",
+        "name": "vpc-012c931361a99622c",
+        "source_data": {
+          "cidr_block_association_set": [
+            {
+              "AssociationId": "vpc-cidr-assoc-042ca1610373816f7",
+              "CidrBlock": "172.31.0.0/16",
+              "CidrBlockState": {
+                "State": "associated"
+              }
+            }
+          ],
+          "description": "",
+          "dhcp_options_id": "dopt-0e4731a6e0e36c0e4",
+          "flow_logs": [],
+          "id": "vpc-012c931361a99622c",
+          "instance_tenancy": "default",
+          "ipv6_cidr_block_association_set": [],
+          "is_default": false,
+          "network_acl": [
+            {
+              "Associations": [
+                {
+                  "NetworkAclAssociationId": "aclassoc-002e497678d91302d",
+                  "NetworkAclId": "acl-0e80b78eed10b45e5",
+                  "SubnetId": "subnet-08c4e4ca160626aab"
+                },
+                {
+                  "NetworkAclAssociationId": "aclassoc-0773b7e0e0af3a226",
+                  "NetworkAclId": "acl-0e80b78eed10b45e5",
+                  "SubnetId": "subnet-0d1a2e8ab14ae489f"
+                },
+                {
+                  "NetworkAclAssociationId": "aclassoc-0c824c07214c76f69",
+                  "NetworkAclId": "acl-0e80b78eed10b45e5",
+                  "SubnetId": "subnet-0ab5b440f03715e75"
+                }
+              ],
+              "Entries": [
+                {
+                  "CidrBlock": "0.0.0.0/0",
+                  "Egress": true,
+                  "Protocol": "-1",
+                  "RuleAction": "allow",
+                  "RuleNumber": 100
+                },
+                {
+                  "CidrBlock": "0.0.0.0/0",
+                  "Egress": true,
+                  "Protocol": "-1",
+                  "RuleAction": "deny",
+                  "RuleNumber": 32767
+                },
+                {
+                  "CidrBlock": "0.0.0.0/0",
+                  "Egress": false,
+                  "Protocol": "-1",
+                  "RuleAction": "allow",
+                  "RuleNumber": 100
+                },
+                {
+                  "CidrBlock": "0.0.0.0/0",
+                  "Egress": false,
+                  "Protocol": "-1",
+                  "RuleAction": "deny",
+                  "RuleNumber": 32767
+                }
+              ],
+              "IsDefault": true,
+              "NetworkAclId": "acl-0e80b78eed10b45e5",
+              "OwnerId": "352209018618",
+              "Tags": [],
+              "VpcId": "vpc-012c931361a99622c"
+            }
+          ],
+          "owner_id": "352209018618",
+          "security_group": [
+            {
+              "Description": "EKS created security group applied to ENI that is attached to EKS Control Plane master nodes, as well as any managed workloads.",
+              "GroupId": "sg-02e101c951f087ace",
+              "GroupName": "eks-cluster-sg-homtech-1093157852",
+              "IpPermissions": [
+                {
+                  "IpProtocol": "-1",
+                  "IpRanges": [],
+                  "Ipv6Ranges": [],
+                  "PrefixListIds": [],
+                  "UserIdGroupPairs": [
+                    {
+                      "GroupId": "sg-02e101c951f087ace",
+                      "UserId": "352209018618"
+                    }
+                  ]
+                },
+                {
+                  "FromPort": 443,
+                  "IpProtocol": "tcp",
+                  "IpRanges": [
+                    {
+                      "CidrIp": "0.0.0.0/0"
+                    }
+                  ],
+                  "Ipv6Ranges": [],
+                  "PrefixListIds": [],
+                  "ToPort": 443,
+                  "UserIdGroupPairs": []
+                }
+              ],
+              "IpPermissionsEgress": [],
+              "OwnerId": "352209018618",
+              "Tags": [
+                {
+                  "Key": "aws:eks:cluster-name",
+                  "Value": "homtech"
+                },
+                {
+                  "Key": "Name",
+                  "Value": "eks-cluster-sg-homtech-1093157852"
+                },
+                {
+                  "Key": "kubernetes.io/cluster/homtech",
+                  "Value": "owned"
+                }
+              ],
+              "VpcId": "vpc-012c931361a99622c"
+            },
+            {
+              "Description": "default VPC security group",
+              "GroupId": "sg-056ed9302e5888a25",
+              "GroupName": "default",
+              "IpPermissions": [
+                {
+                  "IpProtocol": "-1",
+                  "IpRanges": [],
+                  "Ipv6Ranges": [],
+                  "PrefixListIds": [],
+                  "UserIdGroupPairs": [
+                    {
+                      "GroupId": "sg-056ed9302e5888a25",
+                      "UserId": "352209018618"
+                    }
+                  ]
+                }
+              ],
+              "IpPermissionsEgress": [
+                {
+                  "IpProtocol": "-1",
+                  "IpRanges": [
+                    {
+                      "CidrIp": "0.0.0.0/0"
+                    }
+                  ],
+                  "Ipv6Ranges": [],
+                  "PrefixListIds": [],
+                  "UserIdGroupPairs": []
+                }
+              ],
+              "OwnerId": "352209018618",
+              "VpcId": "vpc-012c931361a99622c"
+            }
+          ],
+          "state": "available",
+          "subnets": [
+            {
+              "AssignIpv6AddressOnCreation": false,
+              "AvailabilityZone": "ap-southeast-1a",
+              "AvailabilityZoneId": "apse1-az1",
+              "AvailableIpAddressCount": 4091,
+              "CidrBlock": "172.31.16.0/20",
+              "DefaultForAz": true,
+              "Ipv6CidrBlockAssociationSet": [],
+              "MapCustomerOwnedIpOnLaunch": false,
+              "MapPublicIpOnLaunch": true,
+              "OwnerId": "352209018618",
+              "State": "available",
+              "SubnetArn": "arn:aws:ec2:ap-southeast-1:352209018618:subnet/subnet-0ab5b440f03715e75",
+              "SubnetId": "subnet-0ab5b440f03715e75",
+              "VpcId": "vpc-012c931361a99622c"
+            },
+            {
+              "AssignIpv6AddressOnCreation": false,
+              "AvailabilityZone": "ap-southeast-1b",
+              "AvailabilityZoneId": "apse1-az2",
+              "AvailableIpAddressCount": 4090,
+              "CidrBlock": "172.31.32.0/20",
+              "DefaultForAz": true,
+              "Ipv6CidrBlockAssociationSet": [],
+              "MapCustomerOwnedIpOnLaunch": false,
+              "MapPublicIpOnLaunch": true,
+              "OwnerId": "352209018618",
+              "State": "available",
+              "SubnetArn": "arn:aws:ec2:ap-southeast-1:352209018618:subnet/subnet-0d1a2e8ab14ae489f",
+              "SubnetId": "subnet-0d1a2e8ab14ae489f",
+              "VpcId": "vpc-012c931361a99622c"
+            },
+            {
+              "AssignIpv6AddressOnCreation": false,
+              "AvailabilityZone": "ap-southeast-1c",
+              "AvailabilityZoneId": "apse1-az3",
+              "AvailableIpAddressCount": 4090,
+              "CidrBlock": "172.31.0.0/20",
+              "DefaultForAz": true,
+              "Ipv6CidrBlockAssociationSet": [],
+              "MapCustomerOwnedIpOnLaunch": false,
+              "MapPublicIpOnLaunch": true,
+              "OwnerId": "352209018618",
+              "State": "available",
+              "SubnetArn": "arn:aws:ec2:ap-southeast-1:352209018618:subnet/subnet-08c4e4ca160626aab",
+              "SubnetId": "subnet-08c4e4ca160626aab",
+              "VpcId": "vpc-012c931361a99622c"
+            }
+          ],
+          "tags": [],
+          "type": "network"
+        },
+        "status": "available"
+      }
+    }
+  ],
+  "no_sql": [],
+  "policy": [],
+  "serviceAccount": [],
+  "snapshot": [],
+  "sql": [],
+  "storage": []
+}
